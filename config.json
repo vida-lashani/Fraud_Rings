@@ -1,0 +1,79 @@
+{
+    "table_names": {
+      "passengers": "passengers"
+    },
+    "fraud_table_names": {
+      "passengers_table": "passengers",
+      "driver_performance_table": "driver_performance",
+      "suspected_rides_table": "suspected_rides",
+      "uniqpass_table": "uniqpass",
+      "rides_table": "rides",
+      "rides_today_table": "rides_today",
+      "mutual_passengers_today_table": "mutual_passengers_today",
+      "mutual_passengers_table": "mutual_passengers",
+      "todayintersections_table": "todayintersections",
+      "intersections_table": "intersections",
+      "cities_table": "cities",
+      "gang_table": "gang",
+      "uniqdriv_table": "uniqdriv",
+      "fraud_history_table": "fraud_history",
+      "fraud_rides_table": "fraud_rides",
+      "gang_daily_table": "gang_daily",
+      "gang_rides_table": "gang_rides",
+      "suspect_passengers_table": "suspect_passengers",
+      "filtered_suspassdriv_rides_table": "filtered_suspassdriv_rides",
+      "mutual_drivers_table": "mutual_drivers",
+      "intersections_passengers_table": "intersections_passengers",
+      "intersections_passengers_history_table": "intersections_passengers_history",
+      "mutual_drivers_history_table": "mutual_drivers_history",
+      "gang_passengers_table": "gang_passengers",
+      "filtered_gang_rides_table": "filtered_gang_rides"
+    },
+    "query_thresholds": {
+      "passengers_lookback_days": 3,
+      "less_uniqpass_rate": 93,
+      "more_ride_count": 20,
+      "less_uniq_driver_rate": 90,
+      "more_cout_freq": 2,
+      "more_count_samedriv_edge": 2,
+      "more_passenger_ride_count": 4,
+      "more_passenger_gang_size": 2,
+      "more_unique_pass_per_city": 1,
+      "more_count_samepass_edge": 2,
+      "more_driver_gang_size": 2,
+      "more_unique_driv_per_city": 1
+    },
+    "frequency_fraud_rules": {
+      "rule1": {
+        "more_count_freq": 11
+      },
+      "rule2": {
+        "more_count_freq": 5,
+        "less_percent_uniqdriv": 50
+      },
+      "rule3": {
+        "eq_count_freq": 4,
+        "more_freq_share": 30,
+        "less_percent_uniqdriv": 50
+      },
+      "rule4": {
+        "eq_count_freq": 5,
+        "more_freq_share": 30,
+        "less_percent_uniqdriv": 60
+      },
+      "rule5": {
+        "more_passenger_ride_count": 3,
+        "less_percent_uniqdriv": 50
+      },
+      "rule6": {
+        "more_count_freq": 5,
+        "less_percent_uniqdriv_without_driver": 0.85
+      },
+      "rule7": {
+        "more_count_freq": 8,
+        "less_percent_uniqdriv_without_driver": 0.95
+      }
+    },
+    "db_name": "data"
+  }
+  
