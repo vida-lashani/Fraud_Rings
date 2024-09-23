@@ -29,7 +29,7 @@ To run the project, ensure you have Python installed on your machine.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/vida-lashani/fraud-ring-detection.git
+   git clone https://github.com/vida-lashani/Fraud_Rings.git
    cd fraud-ring-detection
    ```
 
